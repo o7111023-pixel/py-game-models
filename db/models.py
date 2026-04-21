@@ -8,7 +8,7 @@ class Race(models.Model):
     )
     description = models.TextField(blank=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
@@ -26,7 +26,7 @@ class Skill(models.Model):
         related_name='skills'
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
@@ -40,7 +40,7 @@ class Guild(models.Model):
         blank=True
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
@@ -72,5 +72,5 @@ class Player(models.Model):
         auto_now_add=True
     )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.nickname
